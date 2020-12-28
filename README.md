@@ -1,3 +1,10 @@
+###Abrigue um Miau (versão 1.0)
+
+![capa (1)](https://user-images.githubusercontent.com/69398791/103238584-ef2b2100-4929-11eb-89fc-5162c2c73677.jpg)
+
+
+
+
 ### Sejam todos bem vindes!
 
 ## Descrição do Projeto
@@ -30,46 +37,6 @@ Um endereço de email só poderá ser cadastrado uma vez na base de dados.
 
 [https://abrigue-um-miau.herokuapp.com/home/new](https://abrigue-um-miau.herokuapp.com/home/new)
 
-Como é o body:
-
-```jsx
-{
-	"name": "type: string",
-	"email": "type: string",
-	"password": "type: string",
-	"contact": "type: number",
-	"city": "type: string",
-	"neighborhood": "type: string",
-	"homeDescription": "type: string",
-	"available": {"type: boolean", "default": true}
-}
-
-```
-
-Resposta (200) status de sucesso
-
-```jsx
-{
-	"available": true,
-	"_id": "5fd2a701a29adc3bbc96de0c",
-	"name": "Nome Sobrenone",
-	"email": "email@email.com",
-	"password": "password",
-	"contact": "000000000",
-	"city": "Cidade",
-	"neighborhood": "Bairro",
-	"homeDescription": "Apê telado, sem rota de fuga",
-	"favoriteCats": []
-}
-```
-
-Resposta (400) status de erro
-
-```jsx
-{
-	"error": "Não foi possível cadastrar."
-}
-```
 
 ### POST
 
@@ -253,8 +220,8 @@ Resposta (200) status sucesso:
 
 ```jsx
 {
-    "available": true
-    "_id": "5fd2a701a29adc3bbc96de0c",
+		"avaiable": true
+		"_id": "5fd2a701a29adc3bbc96de0c",
     "responsible": "Nome",
     "email": "email@email.com",
     "contact": 11010111010,
@@ -301,8 +268,8 @@ Estrutura do body:
 
 ```jsx
 {
-    "available": true,
-    "_id": "5fd2a701a29adc3bbc96de0c",
+		"avaiable": true,
+		"_id": "5fd2a701a29adc3bbc96de0c",
     "responsible": "Nome",
     "email": "email@email.com",
     "contact": 11010111010,
@@ -310,7 +277,7 @@ Estrutura do body:
     "city": "Cidade",
     "neighborhood": "Bairro",
     "nicknameCat": "Mel",
-    "aboutTheCat": "Amarelo, filhote e já está na rua por um bom tempo"
+    "aboutTheCat": "Amarelo, filhote e já está na rua por um bom tempo",
     
 
 }
@@ -367,6 +334,15 @@ Resposta (400) status de erro:
 - Exclui o cadastro do usuário juntamente com as informações do gato utilizando ID:
 
 [https://abrigue-um-miau.herokuapp.com/cat/delete/:id](https://abrigue-um-miau.herokuapp.com/cat/delete/:id)
+
+## Tecnologias e Ferramentas utilizadas
+
+- **Modelo de arquitetura:** MVC;
+- **Linguagem:**  JavaScript;
+- **Banco de Dados (não relacional):** MongoDB;
+- **Ambiente de execução:**  NodeJS;
+- **Gerenciador de Pacotes:** NPM;
+- **Dependências:** bcrypt, dotenv, express, mongoose e nodemon.
 
 ## Considerações
 
